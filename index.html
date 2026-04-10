@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTrends — Premium Drones & Smart Technology</title>
+    <meta name="description"
+        content="Discover the latest DJI consumer & enterprise drones, FPV systems, smart gadgets, and cutting-edge technology. Premium quality, fast delivery across Switzerland.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-drone">
+                <i class="fas fa-helicopter"></i>
+            </div>
+            <div class="preloader-text">FUTURETRENDS</div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Navigation -->
+    <header id="main-header" class="main-header">
+        <div class="container">
+            <nav class="nav">
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="#" id="logo" class="logo">
+                    <img src="./assets/images/logo-ft-white-cust.png" alt="">
+                </a>
+                <ul id="nav-links" class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="has-dropdown">
+                        <a href="#categories" class="nav-link">Drones <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#"><i class="fas fa-plane"></i> DJI Mavic Series</a>
+                            <a href="#"><i class="fas fa-helicopter"></i> DJI Air Series</a>
+                            <a href="#"><i class="fas fa-drone"></i> DJI Mini Series</a>
+                            <a href="#"><i class="fas fa-rocket"></i> DJI FPV Series</a>
+                            <a href="#"><i class="fas fa-satellite"></i> Enterprise Drones</a>
+                            <a href="#"><i class="fas fa-eye"></i> DJI Avata Series</a>
+                        </div>
+                    </li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="search-btn" class="nav-action-btn" aria-label="Search"><i
+                            class="fas fa-search"></i></button>
+                    <button id="account-btn" class="nav-action-btn" aria-label="Account"><i
+                            class="fas fa-user"></i></button>
+                    <button id="cart-btn" class="nav-action-btn cart-btn" aria-label="Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg-parallax">
+            <div class="hero-particles" id="hero-particles"></div>
+        </div>
+        <div class="hero-gradient-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content" data-reveal>
+                <div class="hero-badge" data-reveal-delay="100">
+                    <span class="badge-dot"></span>
+                    NEW ARRIVAL 2026
+                </div>
+                <h1 class="hero-title" data-reveal-delay="200">
+                    <span class="hero-title-line">DJI MATRICE 4 SERIE</span>
+                </h1>
+                <p class="hero-subtitle" data-reveal-delay="400">
+                    DAS ZEITALTER DES INTELLIGENTEN FLUGES.
+                </p>
+                <div class="hero-cta-group" data-reveal-delay="600">
+                    <a href="#products" id="hero-explore-btn" class="btn btn-primary btn-glow">
+                        <span>Explore Collection</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#about" id="hero-video-btn" class="btn btn-outline">
+                        <span class="btn-play-icon"><i class="fas fa-play"></i></span>
+                        <span>Watch Film</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-reveal-delay="800">
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="20">0</span><span class="hero-stat-suffix">m/s</span>
+                        <span class="hero-stat-label">Top Speed</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="15">0</span><span class="hero-stat-suffix">km</span>
+                        <span class="hero-stat-label">Max Range</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-number" data-count="5.1">0</span><span class="hero-stat-suffix">K</span>
+                        <span class="hero-stat-label">Video Resolution</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-reveal>
+                <div class="hero-image-floating" id="hero-drone-float">
+                    <img src="assets/images/hero-drone.png" alt="DJI Mavic 4 Pro Drone" class="hero-drone-img"
+                        id="hero-drone-img">
+                    <div class="hero-image-glow"></div>
+                </div>
+                <div class="hero-image-shadow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Brands Bar -->
+    <section id="brands-bar" class="brands-bar" data-reveal>
+        <div class="container">
+            <div class="brands-track">
+                <div class="brand-item"><span class="brand-logo-text">DJI</span></div>
+                <div class="brand-item"><span class="brand-logo-text">FLIR</span></div>
+                <div class="brand-item"><span class="brand-logo-text">GoPro</span></div>
+                <div class="brand-item"><span class="brand-logo-text">Insta360</span></div>
+                <div class="brand-item"><span class="brand-logo-text">Autel</span></div>
+                <div class="brand-item"><span class="brand-logo-text">Parrot</span></div>
+                <div class="brand-item"><span class="brand-logo-text">Skydio</span></div>
+                <div class="brand-item"><span class="brand-logo-text">TBS</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Showcase -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">EXPLORE</span>
+                <h2 class="section-title">Shop by Category</h2>
+                <p class="section-desc">From consumer drones to enterprise solutions — find the perfect aerial platform
+                    for your needs.</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card category-large" data-reveal data-reveal-delay="100">
+                    <div class="category-image-wrap">
+                        <img src="assets/images/drone-flying.jpg" alt="Consumer Drones" class="category-img"
+                            loading="lazy">
+                    </div>
+                    <div class="category-overlay">
+                        <span class="category-count">24 Products</span>
+                        <h3 class="category-name">Consumer Drones</h3>
+                        <p class="category-desc">DJI Mavic, Air, Mini & FPV series for creators and adventurers</p>
+                        <a href="#" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-reveal data-reveal-delay="200">
+                    <div class="category-image-wrap">
+                        <img src="assets/images/drone-city.jpg" alt="Enterprise Solutions" class="category-img"
+                            loading="lazy">
+                    </div>
+                    <div class="category-overlay">
+                        <span class="category-count">18 Products</span>
+                        <h3 class="category-name">Enterprise</h3>
+                        <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="category-card" data-reveal data-reveal-delay="300">
+                    <div class="category-image-wrap">
+                        <img src="assets/images/fpv-goggles.jpg" alt="FPV Systems" class="category-img" loading="lazy">
+                    </div>
+                    <div class="category-overlay">
+                        <span class="category-count">12 Products</span>
+                        <h3 class="category-name">FPV & Goggles</h3>
+                        <a href="#" class="category-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Banner 1 -->
+    <section class="parallax-banner" id="parallax-1">
+        <div class="parallax-bg" data-parallax data-speed="0.3">
+            <img src="assets/images/parallax-aerial.jpg" alt="Aerial landscape" class="parallax-img" loading="lazy">
+        </div>
+        <div class="parallax-overlay"></div>
+        <div class="container parallax-content" data-reveal>
+            <span class="parallax-tag">ENTERPRISE SOLUTION</span>
+            <h2 class="parallax-title">DJI MATRICE 400</h2>
+            <p class="parallax-desc">NEUE ÄRA FÜR PROFESSIONELLE DROHNENEINSÄTZE</p>
+            <a href="#" class="btn btn-white btn-glow">Discover Cameras <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">BESTSELLERS</span>
+                <h2 class="section-title">Featured Products</h2>
+
+            </div>
+            <div class="products-grid" id="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="consumer" data-reveal data-reveal-delay="100">
+                    <div class="product-image-wrap">
+                        <div class="product-badge">NEW</div>
+                        <img src="assets/images/drone-mavic-air.jpg" alt="DJI Mavic Air" class="product-img"
+                            loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">Mavic Air Fly More Combo</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 1,049</span>
+                            <span class="price-original">CHF 1,249</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="consumer" data-reveal data-reveal-delay="200">
+                    <div class="product-image-wrap">
+                        <div class="product-badge hot">HOT</div>
+                        <img src="assets/images/drone-mavic-pro.jpg" alt="DJI Mavic Pro" class="product-img"
+                            loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">Mavic Pro Platinum</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(256)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 1,399</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="consumer" data-reveal data-reveal-delay="300">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/drone-mavic-quad.jpg" alt="DJI Mavic Quad" class="product-img"
+                            loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">Mavic Pro Quadcopter</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 1,629</span>
+                            <span class="price-original">CHF 1,899</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="fpv" data-reveal data-reveal-delay="400">
+                    <div class="product-image-wrap">
+                        <div class="product-badge sale">-20%</div>
+                        <img src="assets/images/drone-spark.jpg" alt="DJI Spark" class="product-img" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">DJI FPV Combo</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(167)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 1,199</span>
+                            <span class="price-original">CHF 1,499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="enterprise" data-reveal data-reveal-delay="100">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/drone-phantom.png" alt="DJI Phantom" class="product-img" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">Matrice 350 RTK</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 8,499</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="accessories" data-reveal data-reveal-delay="200">
+                    <div class="product-image-wrap">
+                        <img src="assets/images/drone-inspire.jpg" alt="DJI Inspire" class="product-img" loading="lazy">
+                        <div class="product-actions">
+                            <button class="product-action-btn" aria-label="Quick view"><i
+                                    class="fas fa-eye"></i></button>
+                            <button class="product-action-btn" aria-label="Add to wishlist"><i
+                                    class="fas fa-heart"></i></button>
+                            <button class="product-action-btn" aria-label="Compare"><i
+                                    class="fas fa-shuffle"></i></button>
+                        </div>
+                        <button class="add-to-cart-btn"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-brand">DJI</span>
+                        <h3 class="product-name">DJI Goggles Integra</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            <span>(73)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-current">CHF 549</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Editorial Split Section -->
+    <section class="editorial-section">
+        <div class="editorial-row">
+            <div class="editorial-image-col" data-reveal>
+                <div class="editorial-image-wrap">
+                    <img src="assets/images/parallax-mountains.jpg" alt="Mountain drone flight" class="editorial-img"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="editorial-content-col" data-reveal data-reveal-delay="200">
+                <span class="section-tag">INNOVATION</span>
+                <h2 class="editorial-title">Engineered for the Extraordinary</h2>
+                <p class="editorial-text">Every drone in our collection represents the pinnacle of aerial engineering.
+                    From obstacle sensing to intelligent return-to-home, experience technology that anticipates your
+                    creative vision.</p>
+                <ul class="editorial-features">
+                    <li><i class="fas fa-microchip"></i> <span>Advanced AI Flight Systems</span></li>
+                    <li><i class="fas fa-wind"></i> <span>Level 5 Wind Resistance</span></li>
+                    <li><i class="fas fa-satellite-dish"></i> <span>O3+ Transmission</span></li>
+                    <li><i class="fas fa-battery-full"></i> <span>Extended 48-min Battery</span></li>
+                </ul>
+                <a href="#" class="btn btn-dark btn-glow">Learn More <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="editorial-row reverse">
+            <div class="editorial-image-col" data-reveal>
+                <div class="editorial-image-wrap">
+                    <img src="assets/images/about-team.jpg" alt="Professional drone pilot" class="editorial-img"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="editorial-content-col" data-reveal data-reveal-delay="200">
+                <span class="section-tag">PROFESSIONAL</span>
+                <h2 class="editorial-title">Enterprise Solutions for Every Industry</h2>
+                <p class="editorial-text">From precision agriculture to infrastructure inspection, our enterprise drone
+                    solutions deliver unmatched accuracy and reliability for professional applications.</p>
+                <ul class="editorial-features">
+                    <li><i class="fas fa-map-location-dot"></i> <span>RTK Centimetre Precision</span></li>
+                    <li><i class="fas fa-fire"></i> <span>Thermal Imaging Payload</span></li>
+                    <li><i class="fas fa-cloud-sun"></i> <span>All-Weather Operations</span></li>
+                    <li><i class="fas fa-lock"></i> <span>Enterprise Data Security</span></li>
+                </ul>
+                <a href="#" class="btn btn-dark btn-glow">Enterprise Solutions <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Banner 2 -->
+    <section class="parallax-banner dark" id="parallax-2">
+        <div class="parallax-bg" data-parallax data-speed="0.3">
+            <img src="assets/images/parallax-sunset.jpg" alt="Sunset aerial" class="parallax-img" loading="lazy">
+        </div>
+        <div class="parallax-overlay dark"></div>
+        <div class="container parallax-content centered" data-reveal>
+            <span class="parallax-tag">LIMITED EDITION</span>
+            <h2 class="parallax-title">DJI Mavic 4 Pro</h2>
+            <p class="parallax-subtitle-large">The Flagship Reimagined</p>
+            <p class="parallax-desc">Hasselblad CMOS 4/3 sensor. 48-minute flight time. Omnidirectional obstacle
+                sensing. The most advanced consumer drone ever created.</p>
+            <div class="parallax-cta-group">
+                <a href="#" class="btn btn-white btn-glow">Shop Now <i class="fas fa-arrow-right"></i></a>
+                <a href="#" class="btn btn-outline-white">View Specs <i class="fas fa-list"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">WHY CHOOSE US</span>
+                <h2 class="section-title">The FutureTrends Advantage</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card" data-reveal data-reveal-delay="100">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="feature-title">Authorized Dealer</h3>
+                    <p class="feature-desc">Official DJI authorized dealer in Switzerland. 100% genuine products with
+                        full manufacturer warranty.</p>
+                </div>
+                <div class="feature-card" data-reveal data-reveal-delay="200">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3 class="feature-title">Next-Day Delivery</h3>
+                    <p class="feature-desc">Order before 4 PM and receive your package the next business day. Free
+                        shipping on orders over CHF 200.</p>
+                </div>
+                <div class="feature-card" data-reveal data-reveal-delay="300">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Expert Support</h3>
+                    <p class="feature-desc">Our team of certified drone pilots provides expert advice and technical
+                        support for all your needs.</p>
+                </div>
+                <div class="feature-card" data-reveal data-reveal-delay="400">
+                    <div class="feature-icon-wrap">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="feature-title">2-Year Warranty</h3>
+                    <p class="feature-desc">Extended warranty coverage on all products. Peace of mind with every
+                        purchase from FutureTrends.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Social Proof -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <span class="section-tag">REVIEWS</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-slider" data-reveal>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Outstanding service and incredibly fast delivery. My DJI Mavic 3 Pro
+                        arrived the next day in perfect condition. The team's expertise helped me choose the right drone
+                        for my filmmaking needs."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MK</div>
+                        <div>
+                            <strong>Marco Keller</strong>
+                            <span>Filmmaker, Zurich</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As an enterprise client, FutureTrends has been our go-to partner for
+                        DJI Matrice solutions. Their technical support and quick turnaround on repairs is unmatched in
+                        Switzerland."</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">SB</div>
+                        <div>
+                            <strong>Stefan Brunner</strong>
+                            <span>Survey Engineer, Bern</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The DJI Avata 2 is incredible for FPV flying! FutureTrends gave
+                        excellent advice for a beginner like me and the purchase on invoice option was very convenient."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">LW</div>
+                        <div>
+                            <strong>Laura Weber</strong>
+                            <span>Content Creator, Basel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Story Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-col" data-reveal>
+                    <div class="about-image-composition">
+                        <div class="about-img-main">
+                            <img src="assets/images/drone-controller.jpg" alt="Drone pilot" class="about-img"
+                                loading="lazy">
+                        </div>
+                        <div class="about-img-floating">
+                            <img src="assets/images/drone-flying.jpg" alt="Drone in flight" class="about-img"
+                                loading="lazy">
+                        </div>
+                        <div class="about-experience-badge">
+                            <span class="experience-number">16+</span>
+                            <span class="experience-text">Years of<br>Excellence</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-col" data-reveal data-reveal-delay="200">
+                    <span class="section-tag">OUR STORY</span>
+                    <h2 class="about-title">Switzerland's Leading Drone & Tech Dealer Since 2008</h2>
+                    <p class="about-text">We are a passionate Swiss SME that has been delivering cutting-edge drone
+                        technology and innovative electronics since 2008. As an authorized DJI dealer, we offer the full
+                        range of consumer and enterprise drone solutions.</p>
+                    <p class="about-text">Our team of certified pilots and tech enthusiasts provides expert
+                        consultation, ensuring you find the perfect solution for photography, videography, surveying,
+                        inspection, or pure creative exploration.</p>
+                    <div class="about-counters">
+                        <div class="about-counter">
+                            <span class="counter-number" data-count="15000">0</span><span
+                                class="counter-suffix">+</span>
+                            <span class="counter-label">Happy Customers</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-number" data-count="500">0</span><span class="counter-suffix">+</span>
+                            <span class="counter-label">Products</span>
+                        </div>
+                        <div class="about-counter">
+                            <span class="counter-number" data-count="98">0</span><span class="counter-suffix">%</span>
+                            <span class="counter-label">Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / CTA Banner -->
+    <section class="newsletter-section" id="contact">
+        <div class="newsletter-bg-pattern"></div>
+        <div class="container" data-reveal>
+            <div class="newsletter-content">
+                <h2 class="newsletter-title">Be the First to Know</h2>
+                <p class="newsletter-desc">Subscribe to our newsletter and discover new, innovative products before
+                    anyone else. Exclusive deals and early access included.</p>
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="newsletter-input-wrap">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email address"
+                            class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary btn-glow newsletter-btn">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="newsletter-note">By subscribing, you agree to our privacy policy. Unsubscribe at any time.
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-brand-col">
+                        <a href="#" class="footer-logo">
+                            <span class="logo-icon"><i class="fas fa-paper-plane"></i></span>
+                            <span class="logo-text">FUTURE<span class="logo-accent">TRENDS</span></span>
+                        </a>
+                        <p class="footer-brand-desc">Switzerland's premier destination for DJI drones, smart gadgets,
+                            and innovative technology. Trusted since 2008.</p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Shop</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Consumer Drones</a></li>
+                            <li><a href="#">Enterprise Drones</a></li>
+                            <li><a href="#">FPV Systems</a></li>
+                            <li><a href="#">Accessories & Parts</a></li>
+                            <li><a href="#">Photo & Video</a></li>
+                            <li><a href="#">Gadgets</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Support</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Shipping & Delivery</a></li>
+                            <li><a href="#">Returns & Warranty</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Drone License Info</a></li>
+                            <li><a href="#">Repair Service</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Contact</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-phone"></i> <a href="tel:+41325111103">032 511 11 03</a></li>
+                            <li><i class="fas fa-envelope"></i> <a
+                                    href="mailto:info@futuretrends.ch">info@futuretrends.ch</a></li>
+                            <li><i class="fas fa-clock"></i> Tue-Fri: 08:30-11:30, 14:00-16:30</li>
+                            <li><i class="fas fa-location-dot"></i> Switzerland</li>
+                        </ul>
+                        <div class="footer-payment">
+                            <span class="payment-title">Secure Payment</span>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-apple-pay"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 FutureTrends — trenderia gmbh. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Imprint</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
